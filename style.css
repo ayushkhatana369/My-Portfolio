@@ -434,6 +434,7 @@ nav .fa-solid {
         text-align: center;
         font-size: 14px;
         overflow: visible;
+        word-wrap:break-word;
     }
 
     .layer h3 {
@@ -442,7 +443,7 @@ nav .fa-solid {
     }
 
     .layer p {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.5;
         word-wrap: break-word;
     }
