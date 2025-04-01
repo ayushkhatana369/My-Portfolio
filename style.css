@@ -423,8 +423,25 @@ nav .fa-solid {
     .copyright{
         font-size: 14px;
     }
+    .layer {
+        min-height: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        overflow: visible;
+    }
+    
     .layer p {
-        font-size : 10px;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .work:hover .layer {
+        min-height: 100%;
+        height: auto;
+    }
 }
 #msg {
     color:#61b752;
