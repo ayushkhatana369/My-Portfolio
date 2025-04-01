@@ -422,8 +422,8 @@ nav .fa-solid {
     }
     .copyright{
         font-size: 14px;
-    }
-  .layer {
+    } 
+    .layer {
         height: auto !important; 
         min-height: 100%;
         padding: 20px;
@@ -436,11 +436,15 @@ nav .fa-solid {
         overflow: visible;
     }
 
+    .layer h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
     .layer p {
-        white-space: normal;
-        word-wrap: break-word;
         font-size: 12px;
         line-height: 1.5;
+        word-wrap: break-word;
     }
 
     .work {
