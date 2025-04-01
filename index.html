@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush's Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2b496eac14.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full-Stack Developer</p>
+        <h1>Hi, I am <span>Ayush Khatana</span> <br /> from India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/prof.png" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p class="about-me">Hey, I’m a passionate Full-Stack Developer with expertise in the MERN Stack (MongoDB, Express.js, React, Node.js). I’ve also honed my problem-solving skills by tackling various DSA challenges and I am comfortable working with MySQL databases. Always eager to build dynamic, AI-powered applications that solve real-world problems. Let’s create something amazing!</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Full-Stack</span><br>Web-Developer</li>
+              <li><span>DSA</span><br>Problem-solving</li>
+              <li><span>My-SQL</span><br>Procedural Queries</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Currently building</span><br>Fitness-App</li>
+              <li><span>MySQL databases</span><br>Hands-on experience</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Currently</span><br>Engineering from SRM University</li>
+              <li><span>72% in 12th Standard</span><br>ND Ganga Public School</li>
+              <li><span>91% in 10th Standard</span><br>Delhi Public School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Crafting visually appealing, responsive, and user-friendly websites that provide seamless experiences across all devices and platforms.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>My-SQL Queries</h2>
+          <p>Designing efficient databases, writing optimized queries, and managing data securely to ensure smooth and reliable application performance.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My - Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1.png">
+          <div class="layer">
+            <h3>Fitness-App</h3>
+            <p>Developed an AI-powered fitness app that detects calories from food images and recommends personalized fitness plans. It helps users achieve their health goals efficiently through smart, data-driven insights and tailored routines.</p>
+            <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/ayushh_khatana/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/khatana_ayush" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-khatana-a91314292/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/ayush_resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg">hello</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright &#169; Ayush Khatana <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPlu7qpaKtAVNYnz2pbBmNpJ92uaSwpdYEe_0FHAxfLLPryqtsOEFYzgEpRH0wSWeH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
